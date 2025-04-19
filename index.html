@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PTSC - Tech Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">PTSC</div>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#sign-in" class="sign-in">Sign In</a></li>
+      <li><a href="#login" class="login">Login</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1 style="color: #3498db;;">Tech Club</h1>
+    <p style="color: #3498db;">Programming And Tech Skill Club</p>
+  </header>
+
+  <!-- Events Section -->
+  <section id="events" class="events">
+    <h2>Upcoming Events</h2>
+    <div class="event-cards">
+      <div class="event-card">
+        <img src="WhatsApp Image 2025-04-19 at 15.35.24_00a3d812.jpg" alt="Event 1">
+        <h3>Hackathon 2025</h3>
+        <p>Join our exciting coding challenge!</p>
+      </div>
+      <div class="event-card">
+        <img src="ai.jpg" alt="Event 2">
+        <h3>AI Workshop</h3>
+        <p>Explore the future of AI with experts.</p>
+      </div>
+      <div class="event-card">
+        <img src="WhatsApp Image 2025-04-19 at 15.36.30_773255e9.jpg" alt="Event 3">
+        <h3>Web Development Bootcamp</h3>
+        <p>Master the basics of web development.</p>
+      </div>
+      <div class="event-card">
+        <img src="mobile.jpg" alt="Event 4">
+        <h3>Mobile App Development</h3>
+        <p>Learn how to build apps from scratch.</p>
+      </div>
+      <div class="event-card">
+        <img src="blockchain.jpg" alt="Event 5">
+        <h3>Blockchain Seminar</h3>
+        <p>Understand the blockchain revolution.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Previous Winners Section -->
+  <section id="winners" class="winners">
+    <h2>Previous Winners</h2>
+    <div class="winner-cards">
+      <div class="winner-card">
+        <img src="2024.jpg" alt="Team A">
+        <h3>2024</h3>
+        <p>Winner of the 2024 Hackathon</p>
+      </div>
+      <div class="winner-card">
+        <img src="2023.jpg" alt="Team B">
+        <h3>2023</h3>
+        <p>Winner of the 2023 Hackathon</p>
+      </div>
+      <div class="winner-card">
+        <img src="2022.jpg" alt="Team C">
+        <h3>2022</h3>
+        <p>Winner of the 2022 Hackathon</p>
+      </div>
+      <div class="winner-card">
+        <img src="2021.jpg" alt="Team D">
+        <h3>2021</h3>
+        <p>Winner of the 2021 Hackathon</p>
+      </div>
+      <div class="winner-card">
+        <img src="2020.jpg" alt="Team E">
+        <h3>2020</h3>
+        <p>Winner of the 2020 Hackathon</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-content">
+      <img src="img1.jpg" alt="Image 1">
+      <img src="img2.jpg" alt="Image 2">
+      <img src="img3.jpg" alt="Image 3">
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <div class="social-media">
+      <a href="#"><img src="fb.jpg" alt="Facebook"></a>
+      <a href="#"><img src="teitter.jpg" alt="Twitter"></a>
+      <a href="#"><img src="insta.jpg" alt="Instagram"></a>
+      <a href="#"><img src="li.jpg" alt="LinkedIn"></a>
+    </div>
+  </section>
+
+  <!-- Sign In and Login Modal -->
+  <div id="sign-in-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Sign In</h2>
+      <form>
+        <input type="text" placeholder="Username" required><br>
+        <input type="password" placeholder="Password" required><br>
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Login</h2>
+      <form>
+        <input type="text" placeholder="Username" required><br>
+        <input type="password" placeholder="Password" required><br>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toggle Button -->
+  <button id="toggle-theme" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

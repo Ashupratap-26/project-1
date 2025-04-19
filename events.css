@@ -1,0 +1,110 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Light Theme Defaults */
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    color: #1a1a1a;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 5px;
+  }
+  
+  .nav-links li a.active,
+  .nav-links li a:hover {
+    background-color: #3498db;
+  }
+  
+  /* Toggle Button */
+  #toggle-theme {
+    background: transparent;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Events Section */
+  .events-section {
+    padding: 60px 10%;
+    text-align: center;
+  }
+  
+  .events-section h1 {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 40px;
+  }
+  
+  .events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+  }
+  
+  .event-card {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+  }
+  
+  .dark-mode .event-card {
+    background-color: #1e1e1e;
+    color: white;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+  }
+  
+  .event-card h2 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  .dark-mode .event-card h2 {
+    color: #61dafb;
+  }
+  
+  .event-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
